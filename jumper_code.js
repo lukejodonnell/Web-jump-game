@@ -6,6 +6,10 @@ window.onload = function() {
 	var jumping = false;
 	
 	function resetPlatform() {
+	    var randoNum = (Math.floor(Math.random() * 4) * 100) + 100;
+	    var randoStr = randoNum.toString;
+	    console.log('testing');
+	    
 	    platform.attr({x: '500'});
 	    movePlatform();
 	};
