@@ -7,10 +7,11 @@ window.onload = function() {
 	
 	function resetPlatform() {
 	    var randoNum = (Math.floor(Math.random() * 4) * 100) + 100;
-	    var randoStr = randoNum.toString;
-	    console.log('testing');
+	    var randoStr = randoNum.toString();
+	    console.log(randoNum);
+	    console.log(randoStr);
 	    
-	    platform.attr({x: '500'});
+	    platform.attr({x: '500', y: randoStr});
 	    movePlatform();
 	};
 	
